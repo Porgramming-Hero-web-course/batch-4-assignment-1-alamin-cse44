@@ -15,7 +15,7 @@
     email: "alice@example.com",
   };
 
-  const updateProfile = (profile: Profile, partial: Partial) => {
+  const updateProfile = (profile: Profile, partial: Partial): Profile => {
     profile.age = partial.age;
 
     return profile;
