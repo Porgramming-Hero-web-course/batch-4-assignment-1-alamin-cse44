@@ -2,12 +2,12 @@
   //
 
   type Circle = {
-    shape: string;
+    shape: "circle";
     radius: number;
   };
 
   type Rectangle = {
-    shape: string;
+    shape: "rectangle";
     width: number;
     height: number;
   };
@@ -34,7 +34,7 @@
   }
     
   const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
-  console.log(circleArea?.toFixed(2));
+  console.log(circleArea.toFixed(2));
 
   const rectangleArea = calculateShapeArea({
     shape: "rectangle",
